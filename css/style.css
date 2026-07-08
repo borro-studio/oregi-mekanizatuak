@@ -648,7 +648,7 @@ h2.contact-title {
 
 @media (max-width: 760px) {
   .container { padding: 0 22px; }
-  .nav-side { display: none; }
+  .nav-side, .nav-social, .nav-lang { display: none; }
   .nav-toggle { display: flex; }
   .site-nav .container { height: 70px; }
   .nav-logo { margin: 0; }
