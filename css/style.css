@@ -90,8 +90,8 @@ h1, h2, h3, h4 {
   flex: 1;
   min-width: 0;
 }
-.nav-side-left { justify-content: flex-start; }
-.nav-side-right { justify-content: flex-end; }
+.nav-side-left { justify-content: flex-end; }
+.nav-side-right { justify-content: flex-start; }
 
 .nav-social {
   width: 38px;
@@ -112,9 +112,9 @@ h1, h2, h3, h4 {
   gap: 28px;
 }
 .nav-links a {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.02em;
   color: var(--teal);
   white-space: nowrap;
   transition: color 0.2s ease;
@@ -127,7 +127,7 @@ h1, h2, h3, h4 {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  margin: 0 24px;
+  margin: 0 16px;
 }
 .nav-logo img { height: 46px; width: auto; }
 
