@@ -65,19 +65,22 @@ h1, h2, h3, h4 {
 
 .site-nav {
   position: fixed;
-  top: 0; left: 0; right: 0;
+  top: 24px; left: 24px; right: 24px;
   z-index: 500;
-  background: rgba(255, 255, 255, 0.96);
+  max-width: calc(var(--max) + 40px);
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.97);
+  border-radius: 20px;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  box-shadow: 0 2px 18px rgba(0, 40, 50, 0.06);
+  box-shadow: 0 10px 30px rgba(0, 40, 50, 0.14);
 }
 
 .site-nav .container {
   display: flex;
   align-items: center;
   gap: 36px;
-  height: 84px;
+  height: 78px;
 }
 
 .nav-social {
