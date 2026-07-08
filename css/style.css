@@ -79,9 +79,19 @@ h1, h2, h3, h4 {
 .site-nav .container {
   display: flex;
   align-items: center;
-  gap: 36px;
+  justify-content: space-between;
   height: 78px;
 }
+
+.nav-side {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  flex: 1;
+  min-width: 0;
+}
+.nav-side-left { justify-content: flex-start; }
+.nav-side-right { justify-content: flex-end; }
 
 .nav-social {
   width: 38px;
@@ -94,13 +104,12 @@ h1, h2, h3, h4 {
   justify-content: center;
   flex-shrink: 0;
 }
-.nav-social svg { width: 18px; height: 18px; fill: var(--white); }
+.nav-social svg { width: 20px; height: 20px; fill: var(--white); }
 
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 32px;
-  flex: 1;
+  gap: 28px;
 }
 .nav-links a {
   font-size: 14px;
@@ -118,6 +127,7 @@ h1, h2, h3, h4 {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+  margin: 0 24px;
 }
 .nav-logo img { height: 46px; width: auto; }
 
@@ -125,7 +135,6 @@ h1, h2, h3, h4 {
   display: flex;
   align-items: center;
   gap: 10px;
-  margin-left: auto;
   flex-shrink: 0;
 }
 .nav-lang span {
@@ -148,7 +157,7 @@ h1, h2, h3, h4 {
   justify-content: space-between;
   background: none;
   border: none;
-  margin-left: 12px;
+  flex-shrink: 0;
 }
 .nav-toggle span { display: block; height: 2.5px; width: 100%; background: var(--dark); border-radius: 2px; }
 
@@ -639,10 +648,10 @@ h2.contact-title {
 
 @media (max-width: 760px) {
   .container { padding: 0 22px; }
-  .nav-links { display: none; }
+  .nav-side { display: none; }
   .nav-toggle { display: flex; }
   .site-nav .container { height: 70px; }
-  .nav-lang { margin-left: 12px; }
+  .nav-logo { margin: 0; }
   .hero { padding-bottom: 70px; }
   .section-dark, .section-light, .section-tint { padding: 70px 0; }
   .section-head { flex-direction: column; align-items: flex-start; }
@@ -653,14 +662,15 @@ h2.contact-title {
 }
 
 /* Mobile nav panel */
-.nav-links.mobile-open {
+.site-nav.mobile-open .container { flex-wrap: wrap; }
+.site-nav.mobile-open .nav-side {
   display: flex;
-  position: absolute;
-  top: 70px; left: 0; right: 0;
-  background: var(--white);
   flex-direction: column;
   align-items: flex-start;
-  padding: 20px 22px 26px;
-  gap: 18px;
-  box-shadow: 0 10px 20px rgba(0,40,50,0.08);
+  flex-basis: 100%;
+  gap: 16px;
+  padding: 10px 0 20px;
 }
+.site-nav.mobile-open .nav-side-left { order: 5; }
+.site-nav.mobile-open .nav-side-right { order: 6; border-top: 1px solid rgba(0,58,69,0.1); padding-top: 18px; }
+.site-nav.mobile-open .nav-links { flex-direction: column; align-items: flex-start; gap: 16px; }
