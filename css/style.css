@@ -597,16 +597,7 @@ h2.contact-title {
 .contact-info a.contact-mail { color: var(--teal); font-weight: 600; }
 
 .contact-form-wrap { position: relative; }
-.contact-gear-bg {
-  position: absolute;
-  bottom: -60px; right: -20px;
-  width: 420px;
-  opacity: 0.5;
-  filter: brightness(0) invert(90%) sepia(12%) saturate(300%) hue-rotate(155deg);
-  pointer-events: none;
-  z-index: 0;
-}
-.contact-form-wrap form { position: relative; z-index: 1; display: flex; flex-direction: column; }
+.contact-form-wrap form { display: flex; flex-direction: column; }
 .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px; }
 .form-field input,
 .form-field textarea {
