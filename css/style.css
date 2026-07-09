@@ -627,32 +627,33 @@ h2.contact-title {
 .btn-submit:hover { background: var(--dark); }
 
 /* Footer */
-.footer-badges {
-  background: var(--light-bg);
-  padding: 40px 0;
+.site-footer {
   display: flex;
-  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
 }
-.footer-badges img { height: 76px; }
-
-.footer-main {
+.footer-logo-block {
   background: var(--teal);
-  padding: 46px 0;
+  flex: 0 0 320px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 30px;
+  justify-content: center;
+  padding: 50px 40px;
 }
-.footer-logo { height: 62px; }
+.footer-logo { height: 56px; }
 .footer-partners {
+  flex: 1;
+  background: var(--white);
   display: flex;
   align-items: center;
-  gap: 44px;
+  justify-content: space-evenly;
   flex-wrap: wrap;
+  gap: 40px;
+  padding: 40px;
+  min-width: 280px;
 }
-.footer-partners img { max-height: 44px; }
-.footer-partners img.badge-round { height: 70px; }
+.footer-partners img { max-height: 50px; }
+.footer-partners img.badge-round { height: 76px; }
 
 /* Client logos strip */
 .clients-strip {
@@ -752,7 +753,7 @@ h2.contact-title {
   .service-hero-grid { grid-template-columns: 1fr; }
   .service-hero-art { order: -1; max-width: 420px; }
   .services-gear-bg { display: none; }
-  .footer-partners { justify-content: flex-start; }
+  .footer-partners { justify-content: center; }
 }
 
 @media (max-width: 760px) {
@@ -767,7 +768,7 @@ h2.contact-title {
   .form-row { grid-template-columns: 1fr; }
   .sectores-tabs { overflow-x: auto; flex-wrap: nowrap; padding-bottom: 8px; }
   .sectores-tabs button { flex: 0 0 auto; min-width: 130px; }
-  .footer-main { flex-direction: column; text-align: center; justify-content: center; }
+  .footer-logo-block { flex: 1 1 100%; }
   .footer-partners { justify-content: center; }
 }
 
