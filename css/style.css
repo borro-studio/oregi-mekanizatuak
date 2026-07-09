@@ -351,8 +351,8 @@ section { position: relative; }
   width: 640px;
   max-width: 60vw;
   transform: translate(-50%, -50%);
-  opacity: 0.5;
-  filter: grayscale(1) brightness(1.9);
+  opacity: 0.55;
+  filter: brightness(0) invert(90%) sepia(12%) saturate(300%) hue-rotate(155deg);
   pointer-events: none;
   z-index: 0;
 }
