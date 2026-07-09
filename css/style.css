@@ -339,7 +339,7 @@ section { position: relative; }
 .section-head-center h2 {
   font-family: var(--font-head-serif);
   font-weight: 400;
-  font-size: clamp(38px, 4.6vw, 56px);
+  font-size: clamp(38px, 4.6vw, 64px);
 }
 .section-dark .section-head p { color: var(--text-body-light); }
 
@@ -505,7 +505,7 @@ section { position: relative; }
 .maquinaria-grid h3 {
   font-family: var(--font-head-serif);
   font-weight: 400;
-  font-size: clamp(28px, 3.2vw, 40px);
+  font-size: clamp(38px, 4.6vw, 64px);
   margin-bottom: 26px;
 }
 .maquinaria-grid ul { display: flex; flex-direction: column; gap: 16px; }
