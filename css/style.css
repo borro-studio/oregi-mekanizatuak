@@ -332,6 +332,15 @@ section { position: relative; }
 }
 .section-head h2 { font-size: clamp(30px, 3.6vw, 44px); }
 .section-head p { max-width: 420px; font-size: 15px; }
+.section-head-center {
+  justify-content: center;
+  text-align: center;
+}
+.section-head-center h2 {
+  font-family: var(--font-head-serif);
+  font-weight: 400;
+  font-size: clamp(38px, 4.6vw, 56px);
+}
 .section-dark .section-head p { color: var(--text-body-light); }
 
 /* Servicios */
@@ -453,29 +462,39 @@ section { position: relative; }
 .sectores-tabs {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  justify-content: space-between;
   border-top: 1px solid rgba(0,58,69,0.12);
-  padding-top: 30px;
+  padding-top: 10px;
   margin-bottom: 60px;
 }
 .sectores-tabs button {
+  position: relative;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 10px;
+  justify-content: center;
   background: none;
   border: none;
-  border-radius: 10px;
-  padding: 16px 22px;
+  border-radius: 12px;
+  padding: 26px 18px;
   font-size: 15px;
   font-weight: 600;
   color: var(--dark);
-  min-width: 130px;
+  flex: 1;
   text-align: center;
+  overflow: hidden;
 }
 .sectores-tabs button.active { background: var(--light-bg); }
-.sectores-tabs button .gear-ico { opacity: 0.25; }
-.sectores-tabs button.active .gear-ico { opacity: 0.5; }
+.sectores-tabs button .gear-ico {
+  position: absolute;
+  top: 50%; left: 50%;
+  width: 64px;
+  height: 64px;
+  transform: translate(-58%, -55%);
+  opacity: 0.16;
+  z-index: 0;
+}
+.sectores-tabs button.active .gear-ico { opacity: 0.3; }
+.sectores-tabs button span { position: relative; z-index: 1; }
 
 .maquinaria-grid {
   display: grid;
@@ -730,6 +749,7 @@ h2.contact-title {
   .section-head { flex-direction: column; align-items: flex-start; }
   .form-row { grid-template-columns: 1fr; }
   .sectores-tabs { overflow-x: auto; flex-wrap: nowrap; padding-bottom: 8px; }
+  .sectores-tabs button { flex: 0 0 auto; min-width: 130px; }
   .footer-main { flex-direction: column; text-align: center; justify-content: center; }
   .footer-partners { justify-content: center; }
 }
