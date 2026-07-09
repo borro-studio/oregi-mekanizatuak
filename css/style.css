@@ -503,17 +503,19 @@ section { position: relative; }
   align-items: center;
 }
 .maquinaria-grid h3 {
-  font-size: clamp(26px, 3vw, 36px);
+  font-family: var(--font-head-serif);
+  font-weight: 400;
+  font-size: clamp(28px, 3.2vw, 40px);
   margin-bottom: 26px;
 }
-.maquinaria-grid ul { display: flex; flex-direction: column; gap: 14px; }
+.maquinaria-grid ul { display: flex; flex-direction: column; gap: 16px; }
 .maquinaria-grid li {
   display: flex;
   gap: 12px;
   font-size: 15px;
   color: var(--text-body);
 }
-.maquinaria-grid li .gear-ico { flex-shrink: 0; margin-top: 2px; }
+.maquinaria-grid li .gear-ico { flex-shrink: 0; width: 18px; height: 18px; margin-top: 2px; }
 .maquinaria-grid .photo-wrap { position: relative; }
 .maquinaria-grid .photo-wrap img { border-radius: var(--radius); }
 .maquinaria-grid .photo-wrap .gear-big {
