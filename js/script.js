@@ -48,4 +48,21 @@ document.addEventListener('DOMContentLoaded', () => {
       })
       .join('<br />');
   }
+
+  // Scroll reveal
+  const revealEls = document.querySelectorAll('.reveal');
+  if (revealEls.length) {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('in-view');
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+    revealEls.forEach((el) => observer.observe(el));
+  }
 });

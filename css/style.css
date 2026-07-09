@@ -415,24 +415,39 @@ section { position: relative; }
 .service-card .more-btn:hover { background: var(--teal); }
 
 .services-strip {
-  grid-column: 1 / -1;
   position: relative;
   z-index: 1;
-  margin-top: 20px;
-  border-radius: var(--radius);
+  margin-top: 70px;
+  width: 100%;
+  height: 340px;
   overflow: hidden;
-  height: 260px;
 }
 .services-strip img { width: 100%; height: 100%; object-fit: cover; }
-.services-strip::after { content: ""; position: absolute; inset: 0; background: rgba(0,20,25,0.55); }
+.services-strip::after { content: ""; position: absolute; inset: 0; background: rgba(0,20,25,0.5); }
 .services-strip .strip-logo {
   position: absolute;
   inset: 0;
+  z-index: 1;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.services-strip .strip-logo img { height: 54px; width: auto; }
+.services-strip .strip-logo img {
+  height: 78px;
+  width: auto;
+  filter: drop-shadow(0 6px 24px rgba(0,0,0,0.35));
+}
+
+/* Scroll reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.reveal.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 /* Sectores tabs */
 .sectores-tabs {
