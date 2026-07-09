@@ -547,9 +547,21 @@ section { position: relative; }
   margin-bottom: 30px;
 }
 .historia-photo { border-radius: var(--radius); margin-top: 30px; filter: grayscale(1) contrast(1.05); }
-.historia-text p { margin-bottom: 20px; font-size: 15.5px; }
+.historia-text {
+  position: relative;
+  margin-top: 88px;
+}
+.historia-text p { position: relative; z-index: 1; margin-bottom: 20px; font-size: 15.5px; }
 .historia-text p strong { color: var(--white); }
-.historia-signs { display: flex; gap: 50px; margin-top: 30px; flex-wrap: wrap; }
+.historia-gear-bg {
+  position: absolute;
+  top: -40px; right: -20px;
+  width: 340px;
+  opacity: 0.06;
+  z-index: 0;
+  pointer-events: none;
+}
+.historia-signs { position: relative; z-index: 1; display: flex; gap: 50px; margin-top: 30px; flex-wrap: wrap; }
 .historia-sign { width: 140px; height: auto; opacity: 0.75; }
 
 /* Contacto */
