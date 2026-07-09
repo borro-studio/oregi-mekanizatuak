@@ -224,8 +224,17 @@ h1, h2, h3, h4 {
 .service-hero {
   position: relative;
   padding: 190px 0 90px;
-  background: var(--light-bg);
+  background: var(--white);
   overflow: hidden;
+}
+.service-hero-blueprint {
+  position: absolute;
+  top: 130px;
+  right: -220px;
+  width: 900px;
+  max-width: 70vw;
+  z-index: 0;
+  pointer-events: none;
 }
 .back-btn {
   position: absolute;
@@ -251,6 +260,12 @@ h1, h2, h3, h4 {
   align-items: center;
   position: relative;
   z-index: 2;
+}
+.service-hero-grid.single-col { display: block; }
+.service-hero-text {
+  position: relative;
+  z-index: 1;
+  max-width: 620px;
 }
 .service-hero h1 {
   font-family: var(--font-head-serif);
