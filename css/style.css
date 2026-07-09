@@ -288,7 +288,7 @@ h1, h2, h3, h4 {
   font-weight: 600;
   color: var(--dark);
 }
-.accordion-trigger .gear-ico { flex-shrink: 0; }
+.accordion-trigger .gear-ico { flex-shrink: 0; width: 20px; height: 20px; }
 .accordion-trigger .label { flex: 1; }
 .accordion-trigger .plus {
   font-size: 20px;
@@ -698,6 +698,7 @@ h2.contact-title {
 .treatments-grid h3 { font-family: var(--font-head-serif); font-weight: 400; font-size: clamp(38px, 4.6vw, 64px); grid-column: 1 / -1; margin-bottom: 30px; }
 .treatment-col { display: flex; flex-direction: column; gap: 18px; }
 .treatment-block .t-title { display: flex; align-items: center; gap: 10px; font-weight: 700; color: var(--dark); font-size: 15px; margin-bottom: 6px; }
+.treatment-block .t-title .gear-ico { width: 18px; height: 18px; flex-shrink: 0; }
 .treatment-block ul { padding-left: 30px; }
 .treatment-block li { font-size: 14.5px; color: var(--text-body); margin-bottom: 3px; }
 .exploded-img { margin-top: 40px; text-align: center; }
