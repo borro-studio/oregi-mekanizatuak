@@ -230,9 +230,9 @@ h1, h2, h3, h4 {
 .service-hero-blueprint {
   position: absolute;
   top: 130px;
-  right: -220px;
-  width: 900px;
-  max-width: 70vw;
+  right: 40px;
+  width: 780px;
+  max-width: 44vw;
   z-index: 0;
   pointer-events: none;
 }
@@ -792,6 +792,7 @@ h2.contact-title {
   .service-hero-grid { grid-template-columns: 1fr; }
   .service-hero-art { order: -1; max-width: 420px; }
   .services-gear-bg { display: none; }
+  .service-hero-blueprint { display: none; }
   .footer-partners { justify-content: center; }
 }
 
