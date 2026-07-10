@@ -226,13 +226,14 @@ h1, h2, h3, h4 {
   padding: 190px 0 90px;
   background: var(--white);
   overflow: hidden;
+  min-height: 1050px;
 }
 .service-hero-blueprint {
   position: absolute;
   top: 130px;
-  right: 40px;
-  width: 780px;
-  max-width: 44vw;
+  right: -220px;
+  width: 900px;
+  max-width: 70vw;
   z-index: 0;
   pointer-events: none;
 }
