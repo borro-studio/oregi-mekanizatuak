@@ -513,11 +513,13 @@ section { position: relative; }
 .sectores-tabs button.active .gear-ico { opacity: 0.3; }
 .sectores-tabs button span { position: relative; z-index: 1; }
 
+#sectores { padding-bottom: 0; }
 .maquinaria-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: stretch;
   min-height: 520px;
+  margin-top: 60px;
 }
 .maquinaria-text {
   position: relative;
