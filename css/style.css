@@ -756,7 +756,7 @@ h2.contact-title {
   object-fit: cover;
   border-radius: var(--radius);
 }
-.ingenieria-text { display: flex; flex-direction: column; justify-content: center; gap: 30px; }
+.ingenieria-text { display: flex; flex-direction: column; justify-content: flex-start; padding-top: 10px; gap: 30px; }
 .ingenieria-text h3 { font-family: var(--font-head-serif); font-weight: 400; font-size: clamp(38px, 4.6vw, 64px); }
 .ingenieria-body { display: flex; align-items: flex-start; gap: 40px; }
 .ingenieria-paragraphs { flex: 1; display: flex; flex-direction: column; gap: 18px; }
@@ -772,15 +772,7 @@ h2.contact-title {
   padding: 20px;
 }
 .ingenieria-badge img { max-width: 75%; max-height: 75%; object-fit: contain; }
-.nx-placeholder {
-  font-family: var(--font-head);
-  font-weight: 700;
-  font-size: 36px;
-  color: var(--teal);
-  text-align: center;
-  line-height: 1.2;
-}
-.nx-placeholder small { display: block; font-size: 13px; letter-spacing: 0.1em; color: var(--dark); }
+.nx-logo { width: 65%; height: auto; }
 
 /* Verificacion */
 .verificacion { text-align: center; }
