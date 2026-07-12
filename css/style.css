@@ -812,19 +812,19 @@ h2.contact-title {
 }
 .verificacion-rings {
   position: absolute;
-  top: 130px;
-  left: -50px;
-  width: 460px;
-  max-width: 40vw;
+  top: 150px;
+  left: 140px;
+  width: 320px;
+  max-width: 30vw;
   z-index: 0;
   pointer-events: none;
 }
 .verificacion-seal {
   position: absolute;
   top: 140px;
-  right: -60px;
+  right: 60px;
   width: 480px;
-  max-width: 42vw;
+  max-width: 38vw;
   opacity: 0.3;
   z-index: 0;
   pointer-events: none;
