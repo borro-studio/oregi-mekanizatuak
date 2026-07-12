@@ -731,11 +731,11 @@ h2.contact-title {
   gap: 50px;
   align-items: start;
 }
-.treatments-grid h3 { font-family: var(--font-head-serif); font-weight: 400; font-size: clamp(38px, 4.6vw, 64px); grid-column: 1 / -1; margin-bottom: 30px; }
+.treatments-grid h3 { position: relative; z-index: 2; font-family: var(--font-head-serif); font-weight: 400; font-size: clamp(38px, 4.6vw, 64px); grid-column: 1 / -1; margin-bottom: 30px; }
 .subcontrata-art {
   position: relative;
   grid-column: 1 / -1;
-  height: 400px;
+  height: 580px;
   margin-bottom: 10px;
 }
 .subcontrata-art-bg,
