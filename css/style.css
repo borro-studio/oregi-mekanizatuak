@@ -232,9 +232,9 @@ h1, h2, h3, h4 {
 .service-hero-blueprint {
   position: absolute;
   top: 180px;
-  right: -200px;
-  width: 950px;
-  max-width: 66vw;
+  right: -140px;
+  width: 720px;
+  max-width: 50vw;
   z-index: 0;
   pointer-events: none;
 }
