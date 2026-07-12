@@ -288,7 +288,7 @@ h1, h2, h3, h4 {
   width: 100%;
   border-radius: var(--radius);
 }
-.service-hero-gear-watermark {
+.service-hero-art img.service-hero-gear-watermark {
   position: absolute;
   top: -70px;
   right: -10px;
