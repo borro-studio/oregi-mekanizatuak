@@ -807,12 +807,12 @@ h2.contact-title {
 .verificacion {
   position: relative;
   overflow: hidden;
-  padding: 100px 0 70px;
-  min-height: 560px;
+  padding: 220px 0 70px;
+  min-height: 680px;
 }
 .verificacion-rings {
   position: absolute;
-  top: 10px;
+  top: 130px;
   left: -50px;
   width: 460px;
   max-width: 40vw;
@@ -821,7 +821,7 @@ h2.contact-title {
 }
 .verificacion-seal {
   position: absolute;
-  top: 20px;
+  top: 140px;
   right: -60px;
   width: 480px;
   max-width: 42vw;
