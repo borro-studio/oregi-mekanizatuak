@@ -290,7 +290,7 @@ h1, h2, h3, h4 {
 }
 .service-hero-gear-watermark {
   position: absolute;
-  top: -150px;
+  top: -70px;
   right: -10px;
   width: 85%;
   z-index: 0;
