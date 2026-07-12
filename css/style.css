@@ -804,10 +804,46 @@ h2.contact-title {
 .nx-logo { width: 65%; height: auto; }
 
 /* Verificacion */
-.verificacion { text-align: center; }
-.verificacion .gear-ico-img { width: 34px; height: 34px; margin: 0 auto 18px; display: block; }
-.verificacion h3 { font-family: var(--font-head-serif); font-weight: 400; font-size: clamp(38px, 4.6vw, 64px); }
-.verificacion img { border-radius: var(--radius); margin-top: 40px; }
+.verificacion {
+  position: relative;
+  overflow: hidden;
+  padding: 100px 0 70px;
+  min-height: 560px;
+}
+.verificacion-rings {
+  position: absolute;
+  top: 10px;
+  left: -50px;
+  width: 460px;
+  max-width: 40vw;
+  z-index: 0;
+  pointer-events: none;
+}
+.verificacion-seal {
+  position: absolute;
+  top: 20px;
+  right: -60px;
+  width: 480px;
+  max-width: 42vw;
+  opacity: 0.3;
+  z-index: 0;
+  pointer-events: none;
+}
+.verificacion .container { position: relative; z-index: 1; }
+.verificacion h3 {
+  font-family: var(--font-head-serif);
+  font-weight: 400;
+  font-size: clamp(42px, 5.6vw, 80px);
+  line-height: 1.15;
+  max-width: 640px;
+  margin-left: min(380px, 32vw);
+}
+.verificacion-divider {
+  position: relative;
+  z-index: 1;
+  border-top: 1px solid #d5dee1;
+  margin-top: 60px;
+}
 
 /* Gear icon inline */
 .gear-ico { color: var(--cyan-2); }
@@ -843,6 +879,9 @@ h2.contact-title {
   .service-hero-art { order: -1; max-width: 420px; }
   .services-gear-bg { display: none; }
   .service-hero-blueprint { display: none; }
+  .verificacion-seal { display: none; }
+  .verificacion-rings { width: 300px; max-width: 46vw; }
+  .verificacion h3 { margin-left: 0; padding-left: 46vw; }
   .footer-partners { justify-content: center; }
   .ingenieria-media { height: 320px; }
   .ingenieria-body { flex-direction: column; }
@@ -863,6 +902,9 @@ h2.contact-title {
   .sectores-tabs button { flex: 0 0 auto; min-width: 130px; }
   .footer-logo-block { flex: 1 1 100%; }
   .footer-partners { justify-content: center; }
+  .verificacion { padding-top: 70px; min-height: 0; }
+  .verificacion-rings { display: none; }
+  .verificacion h3 { padding-left: 0; max-width: 100%; }
 }
 
 /* Mobile nav panel */
