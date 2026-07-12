@@ -732,6 +732,18 @@ h2.contact-title {
   align-items: start;
 }
 .treatments-grid h3 { position: relative; z-index: 2; font-family: var(--font-head-serif); font-weight: 400; font-size: clamp(38px, 4.6vw, 64px); grid-column: 1 / -1; margin-bottom: 30px; }
+.treatments-divider { position: relative; z-index: 2; border-top: 1px solid #d5dee1; margin-bottom: 34px; }
+.subcontrata-section { position: relative; overflow: hidden; padding-bottom: 320px; }
+.subcontrata-plano {
+  position: absolute;
+  right: -60px;
+  bottom: -40px;
+  width: 1150px;
+  max-width: 92vw;
+  z-index: 1;
+  pointer-events: none;
+}
+.treatments-grid { position: relative; z-index: 2; }
 .subcontrata-art {
   position: relative;
   height: 460px;
@@ -753,8 +765,6 @@ h2.contact-title {
 .treatment-block .t-title .gear-ico { width: 18px; height: 18px; flex-shrink: 0; }
 .treatment-block ul { padding-left: 30px; }
 .treatment-block li { font-size: 14.5px; color: var(--text-body); margin-bottom: 3px; }
-.exploded-img { margin-top: 40px; text-align: center; }
-.exploded-img img { max-width: 520px; margin: 0 auto; }
 
 /* Ingenieria */
 .ingenieria-grid {
