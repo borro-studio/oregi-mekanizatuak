@@ -693,26 +693,30 @@ h2.contact-title {
 .footer-partners img { max-height: 50px; }
 .footer-partners img.badge-round { height: 76px; }
 
-/* Client logos strip */
-.clients-strip {
+/* Client logos strip (infinite marquee) */
+.clients-marquee {
+  overflow: hidden;
+  padding: 20px 0 10px;
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+  mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+}
+.clients-track {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 60px;
-  flex-wrap: wrap;
-  padding: 20px 0 10px;
+  gap: 70px;
+  width: max-content;
+  animation: clients-scroll 28s linear infinite;
 }
-.client-logo {
-  display: flex;
-  align-items: baseline;
-  gap: 6px;
-  font-family: var(--font-head);
-  font-weight: 700;
-  font-size: 26px;
-  color: var(--teal);
-  opacity: 0.55;
+.clients-marquee:hover .clients-track { animation-play-state: paused; }
+.clients-track img {
+  height: 34px;
+  width: auto;
+  flex-shrink: 0;
 }
-.client-logo small { font-family: var(--font-body); font-weight: 500; font-size: 10px; letter-spacing: 0.1em; opacity: 0.8; }
+@keyframes clients-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
 
 /* Photo pair (mantenimiento) */
 .photo-pair {
