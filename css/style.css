@@ -709,7 +709,7 @@ h2.contact-title {
 }
 .clients-marquee:hover .clients-track { animation-play-state: paused; }
 .clients-track img {
-  height: 34px;
+  height: 46px;
   width: auto;
   flex-shrink: 0;
 }
