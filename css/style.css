@@ -226,14 +226,15 @@ h1, h2, h3, h4 {
   padding: 250px 0 60px;
   background: var(--white);
   overflow: hidden;
+  min-height: 1050px;
 }
 .ingenieria-section { padding-top: 90px; }
 .service-hero-blueprint {
   position: absolute;
-  top: 40px;
-  right: -180px;
-  width: 760px;
-  max-width: 58vw;
+  top: 180px;
+  right: -200px;
+  width: 950px;
+  max-width: 66vw;
   z-index: 0;
   pointer-events: none;
 }
