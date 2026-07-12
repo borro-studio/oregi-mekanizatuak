@@ -746,7 +746,7 @@ h2.contact-title {
   max-width: 100%;
   pointer-events: none;
 }
-.subcontrata-art-bg { opacity: 0.45; right: 60px; }
+.subcontrata-art-bg { opacity: 0.45; right: 130px; }
 .subcontrata-art-fg { top: 2px; right: 4px; z-index: 1; }
 .treatment-col { display: flex; flex-direction: column; gap: 18px; }
 .treatment-block .t-title { display: flex; align-items: center; gap: 10px; font-weight: 700; color: var(--dark); font-size: 15px; margin-bottom: 6px; }
