@@ -732,6 +732,23 @@ h2.contact-title {
   align-items: start;
 }
 .treatments-grid h3 { font-family: var(--font-head-serif); font-weight: 400; font-size: clamp(38px, 4.6vw, 64px); grid-column: 1 / -1; margin-bottom: 30px; }
+.subcontrata-art {
+  position: relative;
+  grid-column: 1 / -1;
+  height: 400px;
+  margin-bottom: 10px;
+}
+.subcontrata-art-bg,
+.subcontrata-art-fg {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  width: 500px;
+  max-width: 46vw;
+  pointer-events: none;
+}
+.subcontrata-art-bg { opacity: 0.28; }
+.subcontrata-art-fg { top: 4px; right: 24px; z-index: 1; }
 .treatment-col { display: flex; flex-direction: column; gap: 18px; }
 .treatment-block .t-title { display: flex; align-items: center; gap: 10px; font-weight: 700; color: var(--dark); font-size: 15px; margin-bottom: 6px; }
 .treatment-block .t-title .gear-ico { width: 18px; height: 18px; flex-shrink: 0; }
