@@ -51,19 +51,22 @@ document.addEventListener('DOMContentLoaded', () => {
     const step = 0.035;
     heroTitle.innerHTML = lines
       .map((line) => {
-        const letters = line
-          .split('')
-          .map((char) => {
-            if (char === ' ') {
-              delay += step;
-              return ' ';
-            }
-            const html = `<span class="letter" style="animation-delay:${delay.toFixed(2)}s">${char}</span>`;
+        const words = line
+          .split(' ')
+          .map((word) => {
+            const letters = word
+              .split('')
+              .map((char) => {
+                const html = `<span class="letter" style="animation-delay:${delay.toFixed(2)}s">${char}</span>`;
+                delay += step;
+                return html;
+              })
+              .join('');
             delay += step;
-            return html;
+            return `<span class="hero-word">${letters}</span>`;
           })
-          .join('');
-        return `<span class="hero-line">${letters}</span>`;
+          .join(' ');
+        return `<span class="hero-line">${words}</span>`;
       })
       .join('');
   }

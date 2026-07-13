@@ -214,6 +214,7 @@ h1, h2, h3, h4 {
   line-height: 1.3;
 }
 .hero h1 .hero-line { display: block; white-space: nowrap; }
+.hero h1 .hero-word { display: inline-block; white-space: nowrap; }
 .hero h1 .letter {
   display: inline-block;
   opacity: 0;
