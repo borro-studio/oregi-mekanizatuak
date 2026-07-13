@@ -968,10 +968,11 @@ h2.contact-title {
 
 @media (max-width: 760px) {
   .container { padding: 0 22px; }
-  .nav-side, .nav-social, .nav-lang { display: none; }
+  .nav-side, .nav-lang { display: none; }
   .nav-toggle { display: flex; }
-  .site-nav .container { height: 70px; }
-  .nav-logo { margin: 0; }
+  .site-nav .container { height: 70px; position: relative; }
+  .nav-logo { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); margin: 0; }
+  .nav-social { display: flex; margin-left: auto; }
   .site-nav {
     transition:
       top 420ms var(--ease-reveal),
@@ -1028,8 +1029,25 @@ h2.contact-title {
   padding-top: 34px;
   padding-bottom: 40px;
 }
-.site-nav.mobile-open .nav-logo { order: 0; }
-.site-nav.mobile-open .nav-toggle { order: 1; }
+.site-nav.mobile-open .nav-logo {
+  position: fixed;
+  left: 36px;
+  top: auto;
+  bottom: 28px;
+  transform: none;
+}
+.site-nav.mobile-open .nav-toggle {
+  position: fixed;
+  top: 30px;
+  right: 36px;
+}
+.site-nav.mobile-open .nav-social { display: none; }
+.site-nav.mobile-open .nav-lang {
+  display: flex;
+  position: fixed;
+  top: 34px;
+  right: 84px;
+}
 .site-nav.mobile-open .nav-side {
   display: flex;
   flex-direction: column;
