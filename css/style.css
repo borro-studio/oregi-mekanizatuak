@@ -444,6 +444,7 @@ section { position: relative; }
 }
 .service-card {
   position: relative;
+  overflow: hidden;
   background: var(--white);
   border: 1.5px solid rgba(0, 58, 69, 0.14);
   border-radius: var(--radius);
@@ -455,6 +456,17 @@ section { position: relative; }
   transition: border-color 0.25s ease, box-shadow 0.25s ease;
 }
 .service-card:hover { border-color: var(--cyan-2); box-shadow: 0 12px 30px rgba(0, 58, 69, 0.08); }
+.service-card-gear-bg {
+  position: absolute;
+  top: 50%; right: -20px;
+  width: 150px;
+  transform: translateY(-50%);
+  opacity: 0.35;
+  filter: brightness(0) invert(90%) sepia(12%) saturate(300%) hue-rotate(155deg);
+  pointer-events: none;
+  z-index: 0;
+}
+.service-card h3, .service-card .more-btn { position: relative; z-index: 1; }
 .service-card h3 {
   font-family: var(--font-head-serif);
   font-weight: 400;
@@ -932,7 +944,7 @@ h2.contact-title {
   .photo-pair,
   .service-hero-grid { grid-template-columns: 1fr; }
   .service-hero-art { order: -1; max-width: 420px; height: 340px; margin: 0 auto 20px; }
-  .services-gear-bg { display: none; }
+  .services-gear-bg { top: 190px; left: 50%; width: 300px; max-width: 70vw; opacity: 0.4; }
   .service-hero-blueprint { display: none; }
   .verificacion-rings { width: 300px; max-width: 46vw; }
   .verificacion h3 { margin-left: 0; padding-left: 46vw; }
