@@ -694,15 +694,20 @@ h2.contact-title {
   color: var(--dark);
   margin-bottom: 10px;
 }
-.contact-info p { font-size: 14.5px; margin-bottom: 4px; }
+.contact-info p,
+.contact-info a.contact-mail,
 .contact-info .contact-phone {
+  font-family: var(--font-body);
+  font-size: 17px;
   display: block;
-  margin-top: 16px;
-  font-size: 22px;
+  margin-bottom: 4px;
+}
+.contact-info .contact-phone { margin-top: 16px; }
+.contact-info a.contact-mail,
+.contact-info .contact-phone {
   font-weight: 700;
   color: var(--dark);
 }
-.contact-info a.contact-mail { color: var(--teal); font-weight: 600; }
 
 .contact-form-wrap { position: relative; }
 .contact-form-wrap form { display: flex; flex-direction: column; }
