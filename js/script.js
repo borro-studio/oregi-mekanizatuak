@@ -1,10 +1,26 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // Mobile nav toggle
+  // Mobile nav toggle — full-screen panel with staggered link reveal
   const navToggle = document.getElementById('navToggle');
   const siteNav = document.querySelector('.site-nav');
   if (navToggle && siteNav) {
     navToggle.addEventListener('click', () => {
-      siteNav.classList.toggle('mobile-open');
+      const opening = !siteNav.classList.contains('mobile-open');
+      if (opening) {
+        siteNav.classList.add('mobile-open');
+        document.body.style.overflow = 'hidden';
+        requestAnimationFrame(() => {
+          requestAnimationFrame(() => siteNav.classList.add('nav-panel-visible'));
+        });
+      } else {
+        siteNav.classList.remove('mobile-open', 'nav-panel-visible');
+        document.body.style.overflow = '';
+      }
+    });
+    siteNav.querySelectorAll('.nav-links a').forEach((link) => {
+      link.addEventListener('click', () => {
+        siteNav.classList.remove('mobile-open', 'nav-panel-visible');
+        document.body.style.overflow = '';
+      });
     });
   }
 
