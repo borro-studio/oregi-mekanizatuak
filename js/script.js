@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Scroll reveal
-  const revealEls = document.querySelectorAll('.reveal');
+  const revealEls = document.querySelectorAll('.reveal, .reveal-group');
   if (revealEls.length) {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
           }
         });
       },
-      { threshold: 0.2 }
+      { threshold: 0.12, rootMargin: '0px 0px -60px 0px' }
     );
     revealEls.forEach((el) => observer.observe(el));
   }
