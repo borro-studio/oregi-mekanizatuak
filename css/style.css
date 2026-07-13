@@ -1034,9 +1034,10 @@ h2.contact-title {
   padding-bottom: 40px;
 }
 .site-nav.mobile-open .nav-logo {
-  position: static;
-  order: -1;
-  margin: 0 0 36px;
+  position: fixed;
+  top: 30px;
+  left: 36px;
+  margin: 0;
   transform: none;
 }
 .site-nav.mobile-open .nav-toggle {
