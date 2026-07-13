@@ -843,26 +843,29 @@ h2.contact-title {
 .ingenieria-grid {
   display: grid;
   grid-template-columns: 0.62fr 1fr;
-  gap: 60px;
+  grid-template-areas: "media title" "media body";
+  grid-template-rows: auto 1fr;
+  column-gap: 60px;
+  row-gap: 20px;
   align-items: stretch;
   min-height: 560px;
 }
-.ingenieria-media { position: relative; height: 100%; overflow: hidden; }
+.ingenieria-title { grid-area: title; align-self: start; margin: 10px 0 0; font-family: var(--font-head-serif); font-weight: 400; font-size: clamp(38px, 4.6vw, 64px); }
+.ingenieria-media { grid-area: media; position: relative; height: 100%; overflow: hidden; }
 .ingenieria-grid .eng-photo {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: var(--radius);
 }
-.ingenieria-text { display: flex; flex-direction: column; justify-content: flex-start; padding-top: 10px; gap: 30px; }
-.ingenieria-text h3 { font-family: var(--font-head-serif); font-weight: 400; font-size: clamp(38px, 4.6vw, 64px); }
+.ingenieria-text { grid-area: body; display: flex; flex-direction: column; justify-content: flex-start; gap: 30px; }
 .ingenieria-body { display: flex; align-items: flex-start; gap: 40px; }
 .ingenieria-paragraphs { flex: 1; display: flex; flex-direction: column; gap: 18px; }
 .nx-logo-overlay {
   position: absolute;
   left: 24px;
   bottom: 24px;
-  width: 110px;
+  width: 150px;
   background: rgba(255, 255, 255, 0.94);
   border-radius: 12px;
   padding: 12px 16px;
@@ -947,11 +950,16 @@ h2.contact-title {
   .verificacion-rings { width: 300px; max-width: 46vw; }
   .verificacion h3 { margin-left: 0; padding-left: 46vw; }
   .footer-partners { justify-content: center; }
+  .ingenieria-grid { grid-template-areas: "title" "media" "body"; row-gap: 14px; }
+  .ingenieria-title { margin-top: 0; }
   .ingenieria-media { height: 320px; }
   .ingenieria-body { flex-direction: column; }
-  .subcontrata-art { height: 260px; }
-  .subcontrata-art-bg, .subcontrata-art-fg { width: 260px; }
-  .subcontrata-art-bg { right: 60px; }
+  .subcontrata-art { height: 400px; }
+  .subcontrata-art-bg, .subcontrata-art-fg { width: 400px; }
+  .subcontrata-art-bg { right: 30px; }
+  .treatments-grid h3 { margin-bottom: 16px; }
+  .treatments-divider { margin-bottom: 18px; }
+  .subcontrata-plano { width: 900px; max-width: 130vw; bottom: -20px; right: -180px; }
 }
 
 @media (max-width: 760px) {
@@ -984,7 +992,8 @@ h2.contact-title {
   .footer-partners { justify-content: center; }
   .verificacion { padding-top: 70px; min-height: 0; }
   .verificacion-rings { display: none; }
-  .verificacion h3 { padding-left: 0; max-width: 100%; }
+  .verificacion h3 { padding-left: 0; max-width: 100%; text-align: center; }
+  .verificacion .container { display: flex; flex-direction: column; align-items: center; }
 }
 
 /* Mobile nav panel — smooth full-screen takeover */
