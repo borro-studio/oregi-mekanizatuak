@@ -872,13 +872,11 @@ h2.contact-title {
   pointer-events: none;
 }
 .verificacion-seal {
-  position: absolute;
-  top: 140px;
-  right: 220px;
-  width: 480px;
-  max-width: 38vw;
-  opacity: 0.3;
-  z-index: 0;
+  display: block;
+  width: 170px;
+  max-width: 40vw;
+  margin: 30px auto 0;
+  opacity: 0.35;
   pointer-events: none;
 }
 .verificacion .container { position: relative; z-index: 1; }
@@ -931,7 +929,6 @@ h2.contact-title {
   .service-hero-art { order: -1; max-width: 420px; }
   .services-gear-bg { display: none; }
   .service-hero-blueprint { display: none; }
-  .verificacion-seal { display: none; }
   .verificacion-rings { width: 300px; max-width: 46vw; }
   .verificacion h3 { margin-left: 0; padding-left: 46vw; }
   .footer-partners { justify-content: center; }
