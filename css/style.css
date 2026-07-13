@@ -944,6 +944,7 @@ h2.contact-title {
   .treatments-grid,
   .photo-pair,
   .service-hero-grid { grid-template-columns: 1fr; }
+  .service-hero { padding: 110px 0 50px; min-height: 0; }
   .service-hero-art { order: -1; max-width: 420px; height: 340px; margin: 0 auto 20px; }
   .services-gear-bg { top: 190px; left: 50%; width: 300px; max-width: 70vw; opacity: 0.4; }
   .service-hero-blueprint { display: none; }
