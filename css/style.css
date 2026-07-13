@@ -972,7 +972,8 @@ h2.contact-title {
   .nav-toggle { display: flex; }
   .site-nav .container { height: 70px; position: relative; }
   .nav-logo { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); margin: 0; }
-  .nav-social { display: flex; margin-left: auto; }
+  .nav-social { display: flex; order: 2; }
+  .nav-toggle { order: 1; }
   .site-nav {
     transition:
       top 420ms var(--ease-reveal),
