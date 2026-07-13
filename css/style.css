@@ -279,24 +279,29 @@ h1, h2, h3, h4 {
   margin: 20px 0 6px;
 }
 .service-hero-lead.lead-lg { font-size: 26px; }
-.service-hero-grid.top-align { align-items: start; }
+.service-hero-grid.top-align { align-items: stretch; }
 .service-hero-art {
   position: relative;
+  height: 100%;
 }
 .service-hero-art img {
   position: relative;
   z-index: 1;
   width: 100%;
+  height: 100%;
+  object-fit: cover;
   border-radius: var(--radius);
 }
 .service-hero-art img.service-hero-gear-watermark {
   position: absolute;
-  top: -70px;
-  right: -10px;
-  width: 85%;
-  z-index: 0;
+  top: 30px;
+  right: 30px;
+  width: 55%;
+  height: auto;
+  object-fit: contain;
+  z-index: 2;
   pointer-events: none;
-  filter: brightness(0) invert(90%) sepia(12%) saturate(300%) hue-rotate(155deg);
+  mix-blend-mode: multiply;
 }
 .hero-video-block {
   background: var(--teal);
