@@ -278,6 +278,7 @@ h1, h2, h3, h4 {
   font-size: 17px;
   margin: 20px 0 6px;
 }
+.service-hero-lead.lead-lg { font-size: 26px; }
 .service-hero-grid.top-align { align-items: start; }
 .service-hero-art {
   position: relative;
@@ -300,8 +301,11 @@ h1, h2, h3, h4 {
 .hero-video-block {
   background: var(--teal);
   border-radius: var(--radius);
+  width: 100%;
   height: 320px;
   margin-top: 34px;
+  object-fit: cover;
+  display: block;
 }
 .section-divider {
   border-top: 1px solid #d5dee1;
