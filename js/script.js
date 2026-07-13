@@ -54,8 +54,11 @@ document.addEventListener('DOMContentLoaded', () => {
         const letters = line
           .split('')
           .map((char) => {
-            const content = char === ' ' ? '&nbsp;' : char;
-            const html = `<span class="letter" style="animation-delay:${delay.toFixed(2)}s">${content}</span>`;
+            if (char === ' ') {
+              delay += step;
+              return ' ';
+            }
+            const html = `<span class="letter" style="animation-delay:${delay.toFixed(2)}s">${char}</span>`;
             delay += step;
             return html;
           })
