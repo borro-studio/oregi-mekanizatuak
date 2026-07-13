@@ -966,8 +966,11 @@ h2.contact-title {
   .section-dark, .section-light, .section-tint { padding: 70px 0; }
   .section-head { flex-direction: column; align-items: flex-start; }
   .form-row { grid-template-columns: 1fr; }
-  .sectores-tabs { overflow-x: auto; flex-wrap: nowrap; padding-bottom: 8px; }
-  .sectores-tabs button { flex: 0 0 auto; min-width: 130px; }
+  .sectores-tabs { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .sectores-tabs button { min-width: 0; padding: 22px 14px; font-size: 14px; }
+  .services-cards { gap: 20px; }
+  .service-card { flex-direction: column; align-items: flex-start; gap: 20px; padding: 28px 24px; }
+  .service-card .more-btn { align-self: flex-start; }
   .footer-logo-block { flex: 1 1 100%; }
   .footer-partners { justify-content: center; }
   .verificacion { padding-top: 70px; min-height: 0; }
