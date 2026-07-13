@@ -858,19 +858,17 @@ h2.contact-title {
 .ingenieria-text h3 { font-family: var(--font-head-serif); font-weight: 400; font-size: clamp(38px, 4.6vw, 64px); }
 .ingenieria-body { display: flex; align-items: flex-start; gap: 40px; }
 .ingenieria-paragraphs { flex: 1; display: flex; flex-direction: column; gap: 18px; }
-.ingenieria-badge {
-  flex-shrink: 0;
-  width: 260px;
-  height: 200px;
-  background: var(--light-bg);
-  border-radius: var(--radius);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
+.nx-logo-overlay {
+  position: absolute;
+  left: 24px;
+  bottom: 24px;
+  width: 110px;
+  background: rgba(255, 255, 255, 0.94);
+  border-radius: 12px;
+  padding: 12px 16px;
+  box-shadow: 0 8px 24px rgba(0, 40, 50, 0.18);
+  z-index: 1;
 }
-.ingenieria-badge img { max-width: 75%; max-height: 75%; object-fit: contain; }
-.nx-logo { width: 65%; height: auto; }
 
 /* Verificacion */
 .verificacion {
@@ -951,7 +949,6 @@ h2.contact-title {
   .footer-partners { justify-content: center; }
   .ingenieria-media { height: 320px; }
   .ingenieria-body { flex-direction: column; }
-  .ingenieria-badge { align-self: flex-start; }
   .subcontrata-art { height: 260px; }
   .subcontrata-art-bg, .subcontrata-art-fg { width: 260px; }
   .subcontrata-art-bg { right: 60px; }
