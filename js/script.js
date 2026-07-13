@@ -46,7 +46,18 @@ document.addEventListener('DOMContentLoaded', () => {
           .join('');
         return `<span class="hero-line">${letters}</span>`;
       })
-      .join('<br />');
+      .join('');
+  }
+
+  // Hero video logo sync — hero text fades with the intro/outro logo in the background loop
+  const heroVideo = document.querySelector('.hero-bg');
+  const heroContent = document.querySelector('.hero-content');
+  if (heroVideo && heroContent) {
+    const visibleWindows = [[0, 4.9], [39.0, 45.3]];
+    const isVisible = (t) => visibleWindows.some(([a, b]) => t >= a && t <= b);
+    heroVideo.addEventListener('timeupdate', () => {
+      heroContent.classList.toggle('hero-hidden', !isVisible(heroVideo.currentTime));
+    });
   }
 
   // Scroll reveal
