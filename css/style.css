@@ -950,8 +950,8 @@ h2.contact-title {
   .verificacion-rings { width: 300px; max-width: 46vw; }
   .verificacion h3 { margin-left: 0; padding-left: 46vw; }
   .footer-partners { justify-content: center; }
-  .ingenieria-grid { grid-template-areas: "media" "title" "body"; row-gap: 14px; }
-  .ingenieria-title { margin-top: 0; }
+  .ingenieria-grid { grid-template-areas: "media" "title" "body"; row-gap: 10px; }
+  .ingenieria-title { margin-top: 28px; }
   .ingenieria-media { height: 520px; }
   .ingenieria-body { flex-direction: column; }
   .subcontrata-art { height: 400px; }
@@ -981,7 +981,7 @@ h2.contact-title {
   .hero h1 { font-size: clamp(26px, 7.5vw, 40px); }
   .hero h1 .hero-line { white-space: normal; }
   .section-dark, .section-light, .section-tint { padding: 70px 0; }
-  .ingenieria-section { padding-top: 24px; }
+  .ingenieria-section { padding-top: 8px; }
   .section-head { flex-direction: column; align-items: flex-start; }
   .form-row { grid-template-columns: 1fr; }
   .sectores-tabs { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
