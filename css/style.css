@@ -262,6 +262,7 @@ h1, h2, h3, h4 {
   transition: all 0.2s ease;
 }
 .back-btn:hover { background: var(--dark); color: var(--white); }
+.service-hero-text .back-btn { display: flex; width: max-content; }
 
 .service-hero-grid {
   display: grid;
