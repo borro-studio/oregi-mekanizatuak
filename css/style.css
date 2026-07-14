@@ -710,33 +710,19 @@ section { position: relative; }
 .historia-sign-aitor { width: 130px; }
 
 .historia-grid-alt { grid-template-columns: 0.95fr 1.05fr; }
+.historia-heritage-title {
+  margin: 0 0 30px;
+  color: var(--white);
+  font-family: var(--font-head-serif);
+  font-weight: 400;
+  font-size: clamp(48px, 6vw, 84px);
+  line-height: 1.1;
+}
 .historia-heritage {
   position: relative;
   aspect-ratio: 1 / 1;
   border-radius: var(--radius);
   overflow: hidden;
-}
-.historia-heritage::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.65), transparent 45%);
-  z-index: 1;
-  pointer-events: none;
-}
-.historia-heritage h2 {
-  position: absolute;
-  left: 8%;
-  bottom: 8%;
-  z-index: 2;
-  margin: 0;
-  color: var(--white);
-  font-family: var(--font-head-serif);
-  font-weight: 400;
-  font-size: clamp(50px, 5.6vw, 84px);
-  line-height: 1.1;
-  text-shadow: 0 4px 26px rgba(0, 0, 0, 0.55);
-  pointer-events: none;
 }
 .historia-heritage img {
   width: 100%;
@@ -1044,12 +1030,12 @@ h2.contact-title {
   .treatments-grid,
   .photo-pair,
   .service-hero-grid { grid-template-columns: 1fr; }
-  .historia-heritage { max-width: 480px; margin: 40px auto 0; }
-  .historia-text-col { text-align: center; }
+  .historia-heritage-col { text-align: center; }
+  .historia-heritage { max-width: 480px; margin: 0 auto; }
+  .historia-text-col { text-align: center; margin-top: 40px; }
   .historia-logo { margin: 0 auto 34px; }
   .historia-text p { text-align: center; }
   .historia-signs { justify-content: center; }
-  .historia-heritage h2 { left: 50%; right: auto; width: 84%; transform: translateX(-50%); text-align: center; }
   .accordion { grid-template-columns: 1fr; }
   .service-hero { padding: 110px 0 50px; min-height: 0; }
   .service-hero-art { order: -1; max-width: 420px; height: 340px; margin: 0 auto 20px; }
