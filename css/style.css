@@ -233,7 +233,7 @@ h1, h2, h3, h4 {
 
 .service-hero {
   position: relative;
-  padding: 250px 0 60px;
+  padding: 300px 0 60px;
   background: var(--white);
   overflow: hidden;
   min-height: 1050px;
@@ -282,6 +282,22 @@ h1, h2, h3, h4 {
   font-weight: 400;
   font-size: clamp(38px, 4.6vw, 64px);
 }
+.service-hero-text h1 {
+  position: relative;
+  display: inline-block;
+  font-size: clamp(50px, 6vw, 90px);
+  padding-bottom: 26px;
+}
+.service-hero-text h1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 50%;
+  height: 5px;
+  border-radius: 3px;
+  background: var(--cyan-2);
+}
 .service-hero-lead {
   font-weight: 600;
   color: var(--dark);
@@ -289,6 +305,13 @@ h1, h2, h3, h4 {
   margin: 20px 0 6px;
 }
 .service-hero-lead.lead-lg { font-size: 26px; }
+.service-hero-text .service-hero-lead {
+  font-family: var(--font-head-serif);
+  font-weight: 400;
+  font-size: clamp(38px, 4.6vw, 64px);
+  color: var(--dark);
+  margin: 8px 0 20px;
+}
 .service-hero-grid.top-align { align-items: stretch; }
 .service-hero-art {
   position: relative;
