@@ -928,12 +928,13 @@ h2.contact-title {
   position: absolute;
   top: 50%;
   right: 60px;
-  transform: translateY(-50%);
   width: 300px;
   max-width: 28vw;
   z-index: 0;
   pointer-events: none;
 }
+.precision-rings.reveal.in-view { transform: translateY(-50%); }
+.precision-rings.reveal { transform-origin: center center; }
 
 /* Verificacion */
 .verificacion {
@@ -1065,12 +1066,12 @@ h2.contact-title {
   .verificacion .container { display: flex; flex-direction: column; align-items: center; }
   .precision-rings {
     position: static;
-    transform: none;
     display: block;
     width: 180px;
     max-width: 55vw;
     margin: 0 auto 24px;
   }
+  .precision-rings.reveal.in-view { transform: translateY(0); }
   .reveal { transform: translateY(56px); transition-duration: 0.85s; }
   .reveal-group > * { transform: translateY(42px); transition-duration: 0.75s; }
 }
