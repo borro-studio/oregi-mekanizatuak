@@ -278,26 +278,21 @@ h1, h2, h3, h4 {
   z-index: 1;
   max-width: 620px;
 }
+.service-hero-grid.single-col .service-hero-text { max-width: 1100px; }
 .service-hero h1 {
   font-family: var(--font-head-serif);
   font-weight: 400;
   font-size: clamp(38px, 4.6vw, 64px);
 }
 .service-hero-text h1 {
-  position: relative;
-  display: inline-block;
   font-size: clamp(50px, 6vw, 90px);
-  padding-bottom: 26px;
 }
-.service-hero-text h1::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 50%;
-  height: 5px;
-  border-radius: 3px;
-  background: var(--cyan-2);
+.hero-sub-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+  margin-top: 34px;
 }
 .service-hero-lead {
   font-weight: 600;
@@ -311,7 +306,7 @@ h1, h2, h3, h4 {
   font-weight: 400;
   font-size: clamp(38px, 4.6vw, 64px);
   color: var(--dark);
-  margin: 8px 0 20px;
+  margin: 0;
 }
 .service-hero-grid.top-align { align-items: stretch; }
 .service-hero-art {
@@ -891,6 +886,7 @@ h2.contact-title {
   height: 100%;
   object-fit: cover;
   border-radius: var(--radius);
+  filter: brightness(0.55);
 }
 .ingenieria-text { grid-area: body; display: flex; flex-direction: column; justify-content: flex-start; gap: 30px; }
 .ingenieria-body { display: flex; align-items: flex-start; gap: 40px; }
@@ -905,6 +901,20 @@ h2.contact-title {
   padding: 12px 16px;
   box-shadow: 0 8px 24px rgba(0, 40, 50, 0.18);
   z-index: 1;
+}
+
+/* Mecanizado de precision */
+.precision-section .container { text-align: center; }
+.precision-section h3 {
+  font-family: var(--font-head-serif);
+  font-weight: 400;
+  font-size: clamp(38px, 4.6vw, 64px);
+  color: var(--dark);
+}
+.precision-section p {
+  max-width: 640px;
+  margin: 16px auto 0;
+  color: var(--text-body);
 }
 
 /* Verificacion */
@@ -978,6 +988,7 @@ h2.contact-title {
   .treatments-grid,
   .photo-pair,
   .service-hero-grid { grid-template-columns: 1fr; }
+  .hero-sub-grid { grid-template-columns: 1fr; gap: 30px; }
   .service-hero { padding: 110px 0 50px; min-height: 0; }
   .service-hero-art { order: -1; max-width: 420px; height: 340px; margin: 0 auto 20px; }
   .services-gear-bg { top: 190px; left: 50%; width: 300px; max-width: 70vw; opacity: 0.4; }
