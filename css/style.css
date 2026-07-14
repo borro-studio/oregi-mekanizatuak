@@ -960,13 +960,14 @@ h2.contact-title {
   opacity: 0.35;
   pointer-events: none;
 }
-.verificacion .container { position: relative; z-index: 1; }
+.verificacion .container { position: relative; z-index: 1; text-align: center; }
 .verificacion h3 {
   font-family: var(--font-head-serif);
   font-weight: 400;
   font-size: clamp(42px, 5.6vw, 80px);
   line-height: 1.15;
   max-width: 640px;
+  margin: 0 auto;
 }
 .verificacion-divider {
   position: relative;
