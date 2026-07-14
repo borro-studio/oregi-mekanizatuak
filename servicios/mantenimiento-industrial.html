@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-title-key="mantenimiento.pageTitle">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -19,38 +19,38 @@
     </a>
     <div class="nav-side nav-side-left">
       <ul class="nav-links">
-        <li><a href="../index.html#empresa">Empresa</a></li>
-        <li><a href="../index.html#servicios" class="active">Servicios</a></li>
+        <li><a href="../index.html#empresa" data-i18n="nav.empresa">Empresa</a></li>
+        <li><a href="../index.html#servicios" class="active" data-i18n="nav.servicios">Servicios</a></li>
       </ul>
     </div>
     <a href="../index.html" class="nav-logo"><img src="../img/logo-oregi-color.png" alt="Oregi Mekanizatuak" /></a>
     <div class="nav-side nav-side-right">
       <ul class="nav-links">
-        <li><a href="../index.html#sectores">Sectores</a></li>
-        <li><a href="../index.html#maquinaria">Maquinaria</a></li>
-        <li><a href="../index.html#contacto">Contacto</a></li>
+        <li><a href="../index.html#sectores" data-i18n="nav.sectores">Sectores</a></li>
+        <li><a href="../index.html#maquinaria" data-i18n="nav.maquinaria">Maquinaria</a></li>
+        <li><a href="../index.html#contacto" data-i18n="nav.contacto">Contacto</a></li>
       </ul>
     </div>
     <div class="nav-lang">
-      <span class="active">ES</span>
-      <span>EUS</span>
-      <span>ING</span>
+      <span class="active" data-lang="es">ES</span>
+      <span data-lang="eu">EUS</span>
+      <span data-lang="en">ING</span>
     </div>
-    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" data-i18n-attr="aria-label:nav.toggleAria"><span></span><span></span><span></span></button>
   </div>
 </nav>
 
 <section class="service-hero">
   <div class="container service-hero-grid top-align">
     <div class="reveal">
-      <a href="../index.html#servicios" class="back-btn">VOLVER</a>
-      <h1>Mantenimiento<br />industrial</h1>
-      <p class="service-hero-lead lead-lg">Tus reparaciones en un máximo de 48 horas</p>
-      <p style="margin-top:6px;font-size:16px">En Oregi ofrecemos un servicio de mantenimiento orientado a ofrecer soluciones rápidas, eficaces y precisas reduciendo los tiempos de parada y asegurando la continuidad de la producción.</p>
+      <a href="../index.html#servicios" class="back-btn" data-i18n="common.back">VOLVER</a>
+      <h1 data-i18n="mantenimiento.hero.title">Mantenimiento<br />industrial</h1>
+      <p class="service-hero-lead lead-lg" data-i18n="mantenimiento.hero.lead">Tus reparaciones en un máximo de 48 horas</p>
+      <p style="margin-top:6px;font-size:16px" data-i18n="mantenimiento.hero.text">En Oregi ofrecemos un servicio de mantenimiento orientado a ofrecer soluciones rápidas, eficaces y precisas reduciendo los tiempos de parada y asegurando la continuidad de la producción.</p>
       <video class="hero-video-block" src="../video/mantenimiento-hero.mp4" poster="../img/mantenimiento-hero-poster.jpg" autoplay muted loop playsinline></video>
     </div>
     <div class="service-hero-art reveal">
-      <img src="../img/machine-tool.jpg" alt="Mantenimiento de maquinaria industrial en Oregi" />
+      <img src="../img/machine-tool.jpg" alt="Mantenimiento de maquinaria industrial en Oregi" data-i18n-attr="alt:mantenimiento.photoAlt" />
     </div>
   </div>
 </section>
@@ -58,7 +58,7 @@
 <section class="section-tint">
   <div class="container">
     <div class="section-head reveal" style="margin-bottom:20px">
-      <h2 style="font-size:20px;letter-spacing:0.04em;text-transform:uppercase">Ellos confían en nosotros</h2>
+      <h2 style="font-size:20px;letter-spacing:0.04em;text-transform:uppercase" data-i18n="clients.title">Ellos confían en nosotros</h2>
     </div>
     <div class="clients-marquee">
       <div class="clients-track">
@@ -88,7 +88,7 @@
 </section>
 
 <div class="cta-back">
-  <a href="../index.html#servicios">&larr; Volver a servicios</a>
+  <a href="../index.html#servicios" data-i18n="common.backToServices">&larr; Volver a servicios</a>
 </div>
 
 <footer class="site-footer">
@@ -102,6 +102,6 @@
   </div>
 </footer>
 
-<script src="../js/script.js?v=8"></script>
+<script src="../js/script.js?v=9"></script>
 </body>
 </html>

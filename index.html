@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-title-key="index.pageTitle">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -19,24 +19,24 @@
     </a>
     <div class="nav-side nav-side-left">
       <ul class="nav-links">
-        <li><a href="index.html#empresa">Empresa</a></li>
-        <li><a href="index.html#servicios">Servicios</a></li>
+        <li><a href="index.html#empresa" data-i18n="nav.empresa">Empresa</a></li>
+        <li><a href="index.html#servicios" data-i18n="nav.servicios">Servicios</a></li>
       </ul>
     </div>
     <a href="index.html" class="nav-logo"><img src="img/logo-oregi-color.png" alt="Oregi Mekanizatuak" /></a>
     <div class="nav-side nav-side-right">
       <ul class="nav-links">
-        <li><a href="index.html#sectores">Sectores</a></li>
-        <li><a href="index.html#maquinaria">Maquinaria</a></li>
-        <li><a href="index.html#contacto">Contacto</a></li>
+        <li><a href="index.html#sectores" data-i18n="nav.sectores">Sectores</a></li>
+        <li><a href="index.html#maquinaria" data-i18n="nav.maquinaria">Maquinaria</a></li>
+        <li><a href="index.html#contacto" data-i18n="nav.contacto">Contacto</a></li>
       </ul>
     </div>
     <div class="nav-lang">
-      <span class="active">ES</span>
-      <span>EUS</span>
-      <span>ING</span>
+      <span class="active" data-lang="es">ES</span>
+      <span data-lang="eu">EUS</span>
+      <span data-lang="en">ING</span>
     </div>
-    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" data-i18n-attr="aria-label:nav.toggleAria"><span></span><span></span><span></span></button>
   </div>
 </nav>
 
@@ -47,7 +47,7 @@
   <div class="hero-mobile-overlay"></div>
   <div class="container hero-content">
     <img class="hero-gear reveal" src="img/gear-icon.png" alt="" />
-    <h1>Soluciones de mecanizado a medida</h1>
+    <h1 data-i18n="hero.title">Soluciones de mecanizado a medida</h1>
   </div>
 </header>
 
@@ -56,20 +56,20 @@
   <div class="container services-layout">
     <img class="services-gear-bg" src="img/gear-icon.png" alt="" />
     <div class="services-intro reveal">
-      <h2>Nuestros<br />servicios</h2>
-      <p>En <strong>Oregi</strong> llevamos más de <strong>50 años</strong> ofreciendo un servicio integral de fabricación de piezas, gestionando todo el proceso desde la adquisición del material hasta el mecanizado final, incluyendo subcontrataciones como tratamientos térmicos, tallado y rectificado.</p>
-      <p>Aseguramos la calidad en todo el proceso.</p>
+      <h2 data-i18n="services.title">Nuestros<br />servicios</h2>
+      <p data-i18n="services.p1">En <strong>Oregi</strong> llevamos más de <strong>50 años</strong> ofreciendo un servicio integral de fabricación de piezas, gestionando todo el proceso desde la adquisición del material hasta el mecanizado final, incluyendo subcontrataciones como tratamientos térmicos, tallado y rectificado.</p>
+      <p data-i18n="services.p2">Aseguramos la calidad en todo el proceso.</p>
     </div>
     <div class="services-cards reveal-group">
       <a class="service-card" href="servicios/mecanizado-bajo-plano.html">
         <img class="service-card-gear-bg" src="img/gear-icon.png" alt="" />
-        <h3>Mecanizado<br />bajo plano</h3>
-        <span class="more-btn">VER MÁS</span>
+        <h3 data-i18n="services.card1.title">Mecanizado<br />bajo plano</h3>
+        <span class="more-btn" data-i18n="common.moreBtn">VER MÁS</span>
       </a>
       <a class="service-card" href="servicios/mantenimiento-industrial.html">
         <img class="service-card-gear-bg" src="img/gear-icon.png" alt="" />
-        <h3>Manteniminiento<br />industrial</h3>
-        <span class="more-btn">VER MÁS</span>
+        <h3 data-i18n="services.card2.title">Mantenimiento<br />industrial</h3>
+        <span class="more-btn" data-i18n="common.moreBtn">VER MÁS</span>
       </a>
     </div>
   </div>
@@ -83,36 +83,36 @@
 <section class="section-light" id="sectores">
   <div class="container">
     <div class="section-head section-head-center reveal">
-      <h2>Sectores</h2>
+      <h2 data-i18n="nav.sectores">Sectores</h2>
     </div>
     <div class="sectores-tabs reveal-group" id="sectorTabs">
       <button class="tab-btn" data-sector="maquina">
         <img class="gear-ico" src="img/gear-icon.png" alt="" />
-        <span>Máquina herramienta</span>
+        <span data-i18n="sectores.maquina">Máquina herramienta</span>
       </button>
       <button class="tab-btn" data-sector="trefilado">
         <img class="gear-ico" src="img/gear-icon.png" alt="" />
-        <span>Trefilado</span>
+        <span data-i18n="sectores.trefilado">Trefilado</span>
       </button>
       <button class="tab-btn" data-sector="construccion">
         <img class="gear-ico" src="img/gear-icon.png" alt="" />
-        <span>Construcción</span>
+        <span data-i18n="sectores.construccion">Construcción</span>
       </button>
       <button class="tab-btn active" data-sector="ferroviario">
         <img class="gear-ico" src="img/gear-icon.png" alt="" />
-        <span>Ferroviario</span>
+        <span data-i18n="sectores.ferroviario">Ferroviario</span>
       </button>
       <button class="tab-btn" data-sector="automocion">
         <img class="gear-ico" src="img/gear-icon.png" alt="" />
-        <span>Automoción</span>
+        <span data-i18n="sectores.automocion">Automoción</span>
       </button>
       <button class="tab-btn" data-sector="menaje">
         <img class="gear-ico" src="img/gear-icon.png" alt="" />
-        <span>Menaje</span>
+        <span data-i18n="sectores.menaje">Menaje</span>
       </button>
       <button class="tab-btn" data-sector="aeronautica">
         <img class="gear-ico" src="img/gear-icon.png" alt="" />
-        <span>Aeronáutica</span>
+        <span data-i18n="sectores.aeronautica">Aeronáutica</span>
       </button>
     </div>
   </div>
@@ -120,16 +120,16 @@
   <div class="maquinaria-grid" id="maquinaria">
     <div class="maquinaria-text reveal">
       <img class="maquinaria-gear-bg" src="img/gear-icon.png" alt="" />
-      <h3>Parque de<br />maquinaria</h3>
+      <h3 data-i18n="maquinaria.title">Parque de<br />maquinaria</h3>
       <ul class="reveal-group">
-        <li><img class="gear-ico" src="img/gear-icon.png" alt="" />Tornos CNC y convencionales.<br />Capacidad hasta: 750mm de diámetro y de largo 2m.</li>
-        <li><img class="gear-ico" src="img/gear-icon.png" alt="" />Centros de mecanizados de precisión de 3 y 5 ejes.<br />Capacidad hasta: 800mm ancho y 1600mm de largo.</li>
-        <li><img class="gear-ico" src="img/gear-icon.png" alt="" />Láser de grabado.</li>
-        <li><img class="gear-ico" src="img/gear-icon.png" alt="" />Gestión de almacén automatizado.</li>
+        <li><img class="gear-ico" src="img/gear-icon.png" alt="" /><span data-i18n="maquinaria.li1">Tornos CNC y convencionales.<br />Capacidad hasta: 750mm de diámetro y de largo 2m.</span></li>
+        <li><img class="gear-ico" src="img/gear-icon.png" alt="" /><span data-i18n="maquinaria.li2">Centros de mecanizados de precisión de 3 y 5 ejes.<br />Capacidad hasta: 800mm ancho y 1600mm de largo.</span></li>
+        <li><img class="gear-ico" src="img/gear-icon.png" alt="" /><span data-i18n="maquinaria.li3">Láser de grabado.</span></li>
+        <li><img class="gear-ico" src="img/gear-icon.png" alt="" /><span data-i18n="maquinaria.li4">Gestión de almacén automatizado.</span></li>
       </ul>
     </div>
     <div class="photo-wrap reveal">
-      <img src="img/parque-maquinaria-2.jpg" alt="Técnico de Oregi operando un torno CNC del parque de maquinaria" />
+      <img src="img/parque-maquinaria-2.jpg" alt="Técnico de Oregi operando un torno CNC del parque de maquinaria" data-i18n-attr="alt:maquinaria.photoAlt" />
     </div>
   </div>
 </section>
@@ -138,9 +138,9 @@
 <section class="section-dark historia" id="empresa">
   <div class="container historia-grid historia-grid-alt">
     <div class="historia-heritage-col">
-      <h2 class="historia-heritage-title reveal">Nuestra<br />historia</h2>
+      <h2 class="historia-heritage-title reveal" data-i18n="historia.title">Nuestra<br />historia</h2>
       <div class="historia-heritage reveal">
-        <img src="img/historia-heritage.jpg" alt="Evolución de Oregi Mekanizatuak desde 1987" />
+        <img src="img/historia-heritage.jpg" alt="Evolución de Oregi Mekanizatuak desde 1987" data-i18n-attr="alt:historia.heritageAlt" />
       </div>
     </div>
     <div class="historia-text-col">
@@ -148,16 +148,16 @@
     <div class="historia-text">
       <img class="historia-gear-bg" src="img/gear-icon.png" alt="" />
       <div class="reveal-group">
-      <p>Somos una empresa familiar de larga tradición con una experiencia de mas de <strong>50 años</strong>.</p>
-      <p>Contamos con personal especializado y tecnología avanzada en mecanizado y torneado, lo que nos permite dar una respuesta ágil y eficaz a las necesidades de nuestros clientes.</p>
-      <p>Nuestra política de calidad está orientada a garantizar que cada producto cumpla con los requisitos de nuestros clientes, asegurando su satisfacción como máxima prioridad.</p>
-      <p>Este compromiso se respalda con la certificación <strong>ISO 9001</strong>, que avala nuestros procesos de gestión y nuestra apuesta por la mejora continua.</p>
-      <p>En Oregi entendemos que la atención al cliente debe ser impecable, tanto en rapidez como en efectividad.</p>
-      <p>Por ello, trabajamos en la búsqueda constante de soluciones optimizadas y personalizadas para cada necesidad de mecanizado.</p>
+      <p data-i18n="historia.p1">Somos una empresa familiar de larga tradición con una experiencia de mas de <strong>50 años</strong>.</p>
+      <p data-i18n="historia.p2">Contamos con personal especializado y tecnología avanzada en mecanizado y torneado, lo que nos permite dar una respuesta ágil y eficaz a las necesidades de nuestros clientes.</p>
+      <p data-i18n="historia.p3">Nuestra política de calidad está orientada a garantizar que cada producto cumpla con los requisitos de nuestros clientes, asegurando su satisfacción como máxima prioridad.</p>
+      <p data-i18n="historia.p4">Este compromiso se respalda con la certificación <strong>ISO 9001</strong>, que avala nuestros procesos de gestión y nuestra apuesta por la mejora continua.</p>
+      <p data-i18n="historia.p5">En Oregi entendemos que la atención al cliente debe ser impecable, tanto en rapidez como en efectividad.</p>
+      <p data-i18n="historia.p6">Por ello, trabajamos en la búsqueda constante de soluciones optimizadas y personalizadas para cada necesidad de mecanizado.</p>
       </div>
       <div class="historia-signs reveal-group">
-        <img class="historia-sign" src="img/firma-joseba.png" alt="Firma de Joseba" />
-        <img class="historia-sign historia-sign-aitor" src="img/firma-aitor.png" alt="Firma de Aitor" />
+        <img class="historia-sign" src="img/firma-joseba.png" alt="Firma de Joseba" data-i18n-attr="alt:historia.sign1Alt" />
+        <img class="historia-sign historia-sign-aitor" src="img/firma-aitor.png" alt="Firma de Aitor" data-i18n-attr="alt:historia.sign2Alt" />
       </div>
     </div>
     </div>
@@ -168,7 +168,7 @@
 <section class="section-light" id="contacto">
   <div class="container contact-grid">
     <div class="contact-info reveal">
-      <h2 class="contact-title">Contacto</h2>
+      <h2 class="contact-title" data-i18n="nav.contacto">Contacto</h2>
       <img class="contact-gear-ico" src="img/gear-icon.png" alt="" />
       <h3>TALLER MECÁNICO OREGI S.L.U</h3>
       <p>Telleria Kalea, 21,</p>
@@ -179,11 +179,11 @@
     <div class="contact-form-wrap reveal">
       <form>
         <div class="form-row">
-          <div class="form-field"><input type="text" placeholder="Nombre" /></div>
-          <div class="form-field"><input type="email" placeholder="Dirección de correo electrónico" /></div>
+          <div class="form-field"><input type="text" placeholder="Nombre" data-i18n-attr="placeholder:contacto.formName" /></div>
+          <div class="form-field"><input type="email" placeholder="Dirección de correo electrónico" data-i18n-attr="placeholder:contacto.formEmail" /></div>
         </div>
-        <div class="form-field"><textarea placeholder="Mensaje"></textarea></div>
-        <button type="submit" class="btn-submit">ENVIAR</button>
+        <div class="form-field"><textarea placeholder="Mensaje" data-i18n-attr="placeholder:contacto.formMessage"></textarea></div>
+        <button type="submit" class="btn-submit" data-i18n="contacto.formSubmit">ENVIAR</button>
       </form>
     </div>
   </div>
@@ -200,6 +200,6 @@
   </div>
 </footer>
 
-<script src="js/script.js?v=8"></script>
+<script src="js/script.js?v=9"></script>
 </body>
 </html>
