@@ -292,7 +292,7 @@ h1, h2, h3, h4 {
   grid-template-columns: 1fr 1fr;
   gap: 60px;
   align-items: start;
-  margin-top: 34px;
+  margin-top: 110px;
 }
 .service-hero-lead {
   font-weight: 600;
@@ -904,16 +904,16 @@ h2.contact-title {
 }
 
 /* Mecanizado de precision */
-.precision-section .container { text-align: center; }
 .precision-section h3 {
   font-family: var(--font-head-serif);
   font-weight: 400;
   font-size: clamp(38px, 4.6vw, 64px);
   color: var(--dark);
+  margin-bottom: 30px;
 }
+.precision-divider { border-top: 1px solid #d5dee1; margin-bottom: 34px; }
 .precision-section p {
   max-width: 640px;
-  margin: 16px auto 0;
   color: var(--text-body);
 }
 
