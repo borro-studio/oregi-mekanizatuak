@@ -1045,6 +1045,11 @@ h2.contact-title {
   .photo-pair,
   .service-hero-grid { grid-template-columns: 1fr; }
   .historia-heritage { max-width: 480px; margin: 40px auto 0; }
+  .historia-text-col { text-align: center; }
+  .historia-logo { margin: 0 auto 34px; }
+  .historia-text p { text-align: center; }
+  .historia-signs { justify-content: center; }
+  .historia-heritage h2 { left: 50%; right: auto; width: 84%; transform: translateX(-50%); text-align: center; }
   .accordion { grid-template-columns: 1fr; }
   .service-hero { padding: 110px 0 50px; min-height: 0; }
   .service-hero-art { order: -1; max-width: 420px; height: 340px; margin: 0 auto 20px; }
