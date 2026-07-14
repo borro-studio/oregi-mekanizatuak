@@ -693,7 +693,7 @@ section { position: relative; }
 .historia-text {
   position: relative;
 }
-.historia-text p { position: relative; z-index: 1; margin-bottom: 20px; font-size: 15.5px; text-align: left; }
+.historia-text p { position: relative; z-index: 1; margin-bottom: 20px; font-size: 15.5px; text-align: center; text-wrap: balance; }
 .historia-text p strong { color: var(--white); }
 .historia-gear-bg {
   position: absolute;
