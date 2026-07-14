@@ -247,6 +247,18 @@ h1, h2, h3, h4 {
   max-width: 42vw;
   z-index: 0;
   pointer-events: none;
+  -webkit-mask-image:
+    linear-gradient(to right, transparent 0%, #000 14%),
+    linear-gradient(to top, transparent 0%, #000 14%);
+  -webkit-mask-repeat: no-repeat, no-repeat;
+  -webkit-mask-size: 100% 100%, 100% 100%;
+  -webkit-mask-composite: source-in;
+  mask-image:
+    linear-gradient(to right, transparent 0%, #000 14%),
+    linear-gradient(to top, transparent 0%, #000 14%);
+  mask-repeat: no-repeat, no-repeat;
+  mask-size: 100% 100%, 100% 100%;
+  mask-composite: intersect;
 }
 .back-btn {
   display: inline-flex;
