@@ -709,9 +709,24 @@ section { position: relative; }
 .historia-sign { width: 170px; height: auto; opacity: 0.9; }
 .historia-sign-aitor { width: 130px; }
 
+.historia-grid-alt { grid-template-columns: 0.95fr 1.05fr; }
 .historia-heritage {
   position: relative;
   aspect-ratio: 1 / 1;
+}
+.historia-heritage h2 {
+  position: absolute;
+  left: 8%;
+  bottom: 9%;
+  z-index: 1;
+  margin: 0;
+  color: var(--white);
+  font-family: var(--font-head-serif);
+  font-weight: 400;
+  font-size: clamp(34px, 3.6vw, 54px);
+  line-height: 1.1;
+  text-shadow: 0 4px 26px rgba(0, 0, 0, 0.55);
+  pointer-events: none;
 }
 .historia-heritage img {
   width: 100%;
