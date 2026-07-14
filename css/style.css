@@ -288,7 +288,7 @@ h1, h2, h3, h4 {
   font-size: clamp(50px, 6vw, 90px);
 }
 .hero-sub-grid {
-  margin-top: 60px;
+  margin-top: 130px;
 }
 .service-hero-lead {
   font-weight: 600;
@@ -907,6 +907,10 @@ h2.contact-title {
 }
 
 /* Mecanizado de precision */
+.precision-section {
+  position: relative;
+  overflow: hidden;
+}
 .precision-section h3 {
   font-family: var(--font-head-serif);
   font-weight: 400;
@@ -919,22 +923,23 @@ h2.contact-title {
   max-width: 640px;
   color: var(--text-body);
 }
+.precision-section .container { position: relative; z-index: 1; }
+.precision-rings {
+  position: absolute;
+  top: 50%;
+  right: 60px;
+  transform: translateY(-50%);
+  width: 300px;
+  max-width: 28vw;
+  z-index: 0;
+  pointer-events: none;
+}
 
 /* Verificacion */
 .verificacion {
   position: relative;
   overflow: hidden;
-  padding: 220px 0 70px;
-  min-height: 680px;
-}
-.verificacion-rings {
-  position: absolute;
-  top: 150px;
-  left: 340px;
-  width: 320px;
-  max-width: 30vw;
-  z-index: 0;
-  pointer-events: none;
+  padding: 110px 0 70px;
 }
 .verificacion-seal {
   display: block;
@@ -951,7 +956,6 @@ h2.contact-title {
   font-size: clamp(42px, 5.6vw, 80px);
   line-height: 1.15;
   max-width: 640px;
-  margin-left: min(380px, 32vw);
 }
 .verificacion-divider {
   position: relative;
@@ -996,8 +1000,7 @@ h2.contact-title {
   .service-hero-art { order: -1; max-width: 420px; height: 340px; margin: 0 auto 20px; }
   .services-gear-bg { top: 190px; left: 50%; width: 300px; max-width: 70vw; opacity: 0.4; }
   .service-hero-blueprint { display: none; }
-  .verificacion-rings { width: 300px; max-width: 46vw; }
-  .verificacion h3 { margin-left: 0; padding-left: 46vw; }
+  .precision-rings { width: 220px; max-width: 34vw; right: 30px; }
   .footer-partners { justify-content: center; }
   .ingenieria-grid { grid-template-areas: "media" "title" "body"; row-gap: 10px; }
   .ingenieria-title { margin-top: 28px; }
@@ -1015,8 +1018,9 @@ h2.contact-title {
 
 @media (max-width: 760px) {
   .container { padding: 0 22px; }
-  .hero-sub-grid { margin-top: 40px; }
+  .hero-sub-grid { margin-top: 60px; }
   .accordion { margin-top: 14px; }
+  .service-hero-text .service-hero-lead { font-size: clamp(26px, 7vw, 34px); }
   .hero-bg { display: none; }
   .hero-bg-static { display: block; }
   .hero::before { display: none; }
@@ -1057,10 +1061,16 @@ h2.contact-title {
   .service-card .more-btn { align-self: flex-start; }
   .footer-logo-block { flex: 1 1 100%; }
   .footer-partners { justify-content: center; }
-  .verificacion { padding-top: 70px; min-height: 0; }
-  .verificacion-rings { display: none; }
-  .verificacion h3 { padding-left: 0; max-width: 100%; text-align: center; }
+  .verificacion h3 { max-width: 100%; text-align: center; }
   .verificacion .container { display: flex; flex-direction: column; align-items: center; }
+  .precision-rings {
+    position: static;
+    transform: none;
+    display: block;
+    width: 180px;
+    max-width: 55vw;
+    margin: 0 auto 24px;
+  }
   .reveal { transform: translateY(56px); transition-duration: 0.85s; }
   .reveal-group > * { transform: translateY(42px); transition-duration: 0.75s; }
 }
