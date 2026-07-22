@@ -8,4 +8,4 @@ RewriteRule ^contacto/?$ /index.html#contacto [R=301,L,NE]
 # Any other unknown/old URL -> homepage instead of a dead 404
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^ /index.html [L]
+RewriteRule ^ / [R=301,L]
