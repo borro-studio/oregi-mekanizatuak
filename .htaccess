@@ -1,0 +1,11 @@
+RewriteEngine On
+
+# Old WordPress pages -> matching sections of the new site
+RewriteRule ^empresa/?$ /index.html#empresa [R=301,L,NE]
+RewriteRule ^servicios/?$ /index.html#servicios [R=301,L,NE]
+RewriteRule ^contacto/?$ /index.html#contacto [R=301,L,NE]
+
+# Any other unknown/old URL -> homepage instead of a dead 404
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ /index.html [L]
